@@ -2,11 +2,12 @@ package main
 
 import (
 	"database/sql"
-	"git/graph"
-	"git/internal/database"
 	"log"
 	"net/http"
 	"os"
+
+	"github.com/AxelGeorg/ServidorCurso_GraphQL/graph"
+	"github.com/AxelGeorg/ServidorCurso_GraphQL/internal/database"
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"

@@ -1,6 +1,6 @@
 package graph
 
-import "git/internal/database"
+import "github.com/AxelGeorg/ServidorCurso_GraphQL/internal/database"
 
 // This file will not be regenerated automatically.
 //

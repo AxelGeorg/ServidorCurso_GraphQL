@@ -1,4 +1,4 @@
-module git
+module github.com/AxelGeorg/ServidorCurso_GraphQL
 
 go 1.22.3
 
