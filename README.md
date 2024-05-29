@@ -13,6 +13,7 @@ https://gqlgen.com/
 ```sh
  sudo sqlite3 data.db
  create table categories (id string, name string, description string);
+ create table courses (id string, name string, description string, categoryId string);
 ```
 
 - Testes no GraphQL ([http://localhost:8080])
@@ -20,7 +21,7 @@ https://gqlgen.com/
  sudo go run cmd/server/server.go 
 ```
 
-- Teste mutation:
+- Testes mutation:
 ```sh
  mutation createCategory {
    createCategory(input: {name: "Tecnologia", description: "Cursos de tecnologia"}){
@@ -29,6 +30,13 @@ https://gqlgen.com/
      description
    }
  }
+
+ mutation createCourse {
+  createCourse(input: {name: "Full Cycle", description: "The best", categoryId: "ad610ef8-ba74-44ff-aba8-3b8c015dd354"}){
+		id
+    name
+    description
+  }
 ```
 
 
@@ -54,4 +62,12 @@ https://gqlgen.com/
  	 id
    }
  }
+
+ query queryCourse {
+	courses {
+	 id
+     name
+     description
+  }
+}
 ```
