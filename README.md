@@ -1,10 +1,10 @@
 # ServidorCurso_GraphQL
 Aplicação utilizando a linguage Go, GraphQL e SQLite
 
-- Site para os primeiros passos com GraphQL: ```sh
-[https://gqlgen.com/]
+- Site para os primeiros passos com GraphQL:
+https://gqlgen.com/
 
-- caso o schema graphQL seja alterado no arquivo x é necessário rodar o comando: 
+- Caso o schema graphQL seja alterado no arquivo schema.graphqls é necessário rodar o comando: 
 ```sh
  go run github.com/99designs/gqlgen generate
 ```
