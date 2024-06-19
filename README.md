@@ -68,6 +68,33 @@ https://gqlgen.com/
 	 id
      name
      description
+    }
+  }
+
+query queryCategoryWithCourses {
+	categories {
+		id
+    name
+    description
+    courses {
+      id
+      name    
+    }
   }
 }
+
+
+query queryCourseWithCategory {
+	courses {
+		id
+    name
+    description
+    category {
+      id
+      name
+      description
+    }
+  }
+}
+
 ```
